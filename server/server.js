@@ -23,7 +23,6 @@ server.post('/login', function (req, res) {
     if (file.email == req.body.email && (file.password == req.body.password)) {
         res.redirect('/home.html');
     } else {
-        /* alert('Invalid email or password'); */
         res.send(`Invalid username or password!`);
     }
     console.log(file.email);
