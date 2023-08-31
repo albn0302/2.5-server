@@ -1,0 +1,15 @@
+{
+  "name": "2.5-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon ./server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}

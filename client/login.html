@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <img src="./images/image.webp" class="background-image blur" alt="background-image">
+    <nav>
+        <div class="wrappedButton">
+            <a href="/index.html"><button class="indexButton">Index</button></a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Enter your login information here</h1>
+    </header>
+    <div class="content">
+        <form action="/login" method="post" class="form">
+            <input type="email" name="email" class="inputs" placeholder="Email" required>
+            <input type="password" name="password" class="inputs" placeholder="Password" required>
+            <div class="centerButton">
+                <button type="submit" class="submitButton">Login</button>
+            </div>
+            <footer class="signupText">
+                <p>Don't have an account? <a href="/signup.html">Sign Up</a>.</p>
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+nav {
+    background-color: #eeeeee70;
+    box-shadow: 0rem 0.25rem #121212;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: 'IBM Plex Mono';
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 25rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+
+    font-weight: 700;
+    font-family: 'IBM Plex Mono';
+    text-transform: lowercase;
+    text-align: center;
+
+    width: 15rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+p,
+a {
+    font-family: 'IBM Plex Mono';
+}
+
+.background-image {
+    position: absolute;
+    pointer-events: none;
+
+    filter: blur(2px);
+
+    max-width: 200%;
+    height: auto;
+
+    z-index: -999;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.wrappedButton {
+    display: flex;
+    gap: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 9rem;
+    margin-bottom: 2.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    text-transform: lowercase;
+
+    background-color: #fff;
+    padding: 0.25rem 0.1rem;
+    border-radius: 0.25rem;
+    border: solid 0.125rem #121212;
+    box-shadow: 0.25rem 0.25rem #121212;
+    transition:
+        transform 50ms, box-shadow 50ms;
+}
+
+.inputs:focus {
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0.125rem 0.125rem #121212;
+}
+
+.inputs:focus::placeholder {
+    color: transparent;
+}
+
+.submitButton {
+    margin-left: 3.25rem;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: solid 0.125rem #121212;
+    box-shadow: 0.25rem 0.25rem #121212;
+
+    transition:
+        transform 50ms, box-shadow 50ms;
+}
+
+.indexButton,
+.loginButton,
+.signupButton,
+.homeButton {
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: solid 0.125rem #121212;
+    box-shadow: 0.25rem 0.25rem #121212;
+
+    transition:
+        transform 50ms, box-shadow 50ms;
+}
+
+.submitButton:active,
+.indexButton:active,
+.loginButton:active,
+.signupButton:active,
+.homeButton:active {
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0.125rem 0.125rem #121212;
+}
+
+.loginText {
+    margin-top: 1rem;
+
+    font-family: 'IMB Plex Mono';
+    font-weight: 700;
+    text-transform: lowercase;
+
+    text-align: center;
+    width: 12rem;
+}
+
+.signupText {
+    margin-top: 1rem;
+
+    font-weight: 700;
+    text-transform: lowercase;
+
+    text-align: center;
+    width: 11rem;
+}
+
+.welcome-header {
+    font-size: 3em;
+}
+
+.content-background {
+    margin-top: 7rem;
+    padding: 2.5rem 0 2.5rem;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem #121212;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: fit-content;
+}
+
+.footer-center {
+    margin-left: 25%;
+}
